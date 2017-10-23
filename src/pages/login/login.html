@@ -1,0 +1,17 @@
+<ion-content padding>
+    <ion-list id="logIn-list2">
+      <label class="item item-input" id="logIn-input4">
+        <span class="input-label">Email</span>
+        <ion-input type="email" placeholder="email"></ion-input>
+      </label>
+      <label class="item item-input" id="logIn-input5">
+        <span class="input-label">Password</span>
+        <ion-input type="password" placeholder="password"></ion-input>
+      </label>
+    </ion-list>
+    <div class="spacer" style="height: 40px;"></div>
+    <button (click)="goToProfile()" ion-button full>Log in</button>
+    <button (click)="goToSignUp()" ion-button full clear id="logIn-button5"
+                class="button button-positive button-block button-clear">Or create an account
+    </button>
+</ion-content>

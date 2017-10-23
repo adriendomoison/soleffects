@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Mood Tracker</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Happy 😄</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Sad 😢</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Angry 😡</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+
+      <button ion-button full (click)="submitMood()">Next</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

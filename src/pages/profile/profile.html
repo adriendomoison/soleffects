@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar primary>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/logo.png">
+      </ion-avatar>
+      <h2>John Doe</h2>
+    </ion-item>
+
+    <ion-card-content>
+      <p>Stress adventure</p>
+      <p>Hobbies: Dancing, Writing</p>
+    </ion-card-content>
+
+    <ion-list>
+      <ion-col>
+        <button (click)="goToMoodTracker()" ion-button clear>Mood tracker</button>
+      </ion-col>
+      <ion-col>
+        <button (click)="gotoExperiences()" ion-button clear>Coach experiences</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button clear>Questions for coach</button>
+      </ion-col>
+    </ion-list>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-content>
+      <h2>Tips</h2>
+      <p>Here is your tip: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        anim id est laborum.</p>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

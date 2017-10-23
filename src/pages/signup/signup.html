@@ -1,0 +1,68 @@
+<ion-content padding>
+
+  <ion-card *ngIf="i == 0" padding>
+    <h2 style="font-weight: bold">Information</h2>
+    <ion-list id="signup-list1">
+      <label class="item item-input" id="signup-input1">
+        <span class="input-label">Name</span>
+        <ion-input type="text" placeholder=""></ion-input>
+      </label>
+      <label class="item item-input" id="signup-input2">
+        <span class="input-label">Email</span>
+        <ion-input type="email" placeholder=""></ion-input>
+      </label>
+      <label class="item item-input" id="signup-input3">
+        <span class="input-label">Password</span>
+        <ion-input type="text" placeholder=""></ion-input>
+      </label>
+    </ion-list>
+  </ion-card>
+
+  <ion-card *ngIf="i == 1" padding>
+    <h2 style="font-weight: bold">What are your goals?</h2>
+    <ion-list radio-group [(ngModel)]="goal">
+      <ion-item>
+        <ion-label>Passion &amp; Purpose</ion-label>
+        <ion-radio value="purpose" checked></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Team work</ion-label>
+        <ion-radio value="teamwork" [disabled]="isDisabled"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Empathy</ion-label>
+        <ion-radio value="empathy"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Stress control</ion-label>
+        <ion-radio value="stress" [disabled]="isDisabled"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Direct Communication</ion-label>
+        <ion-radio value="communication"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Mind and Body</ion-label>
+        <ion-radio value="mind"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Healthy Relationship</ion-label>
+        <ion-radio value="relationship"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Leadership</ion-label>
+        <ion-radio value="leadership"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  <ion-card *ngIf="i == 2" padding>
+    <h2 style="font-weight: bold">What are your hobbies?</h2>
+    <label class="item item-input" id="hobbies-input6">
+      <ion-textarea type="text" placeholder="..."></ion-textarea>
+    </label>
+  </ion-card>
+
+  <button ion-button full (click)="next()">Next</button>
+
+</ion-content>
